@@ -48,6 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
         Container(
           padding: EdgeInsets.symmetric(horizontal: 20, vertical: 14),
           child: TextField(
+            maxLines: 1,           
             controller: _textTitleController,
             decoration: InputDecoration(
               hintText: "Title",
@@ -58,6 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
         Container(
           padding: EdgeInsets.symmetric(horizontal: 20, vertical: 14),
           child: TextField(
+            maxLines: 2,
             controller: _textDescriptionController,
             decoration: InputDecoration(
               hintText: "Description",
@@ -75,7 +77,6 @@ class _MyHomePageState extends State<MyHomePage> {
                       todoList[index].title ?? '',
                       style: TextStyle(
                           fontWeight: FontWeight.bold, color: Colors.black),
-                      maxLines: 2,
                     ),
                     subtitle: Text(
                       todoList[index].description ?? 'empty',
