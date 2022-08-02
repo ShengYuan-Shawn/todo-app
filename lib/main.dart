@@ -47,8 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(children: <Widget>[
         Container(
           padding: EdgeInsets.symmetric(horizontal: 20, vertical: 14),
-          child: TextField(
-            maxLines: 1,           
+          child: TextField(           
             controller: _textTitleController,
             decoration: InputDecoration(
               hintText: "Title",
@@ -59,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
         Container(
           padding: EdgeInsets.symmetric(horizontal: 20, vertical: 14),
           child: TextField(
-            maxLines: 2,
+            maxLines: 3,
             controller: _textDescriptionController,
             decoration: InputDecoration(
               hintText: "Description",
